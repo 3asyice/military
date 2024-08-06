@@ -7,128 +7,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Exército</title>
 </head>
-<style>
-  body {
-    color: rgba(255, 255, 255, 1);
-    font-family: sans-serif;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 1);
-    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwODgtcC0wMDAyZC14XzEta3plZjkwNzUuanBn.jpg);
-  }
-
-  .head-neon {
-    font-family: times;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
-    font-size: 13px;
-    animation: neon 1s ease-in-out infinite alternate;
-    margin-left: 200px;
-  }
-
-  @keyframes neon {
-    from {
-      text-shadow: 0px 0px 35px rgba(118, 255, 86, 1),
-        0px 0px 40px rgba(13, 177, 0, 1),
-        0px 0px 55px rgba(23, 123, 0, 1);
-    }
-  }
-  p, li, summary{
-    color: rgba(255, 255, 255, 1);
-    font-size: 12px;
-    letter-spacing: 0px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding:10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 91%;
-    font-size: 12px
-  }
-
-  .position, 
-  .internatoo, 
-  .inscricoes {
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    display: none;
-    overflow: auto;
-    height: auto;
-    margin:0;
-    position: fixed;
-    background-color: rgba(7, 35, 0, 1);
-  }
-  button {
-   background:none; 
-   border:none;
-   color:rgba(255, 255, 255, 1);
-   margin-left:35px;
-   box-shadow:  0 5px 0 rgba(0, 149, 30, 1);
-   font-weight: bolder;
-    
-    
-  }
-  .gold {
-    font-family:times;
-    color:gold;
-    font-style: italic;
-    font-size: 13px;
-    animation: neonn 1s ease-in-out infinite alternate;
-  }
-  @keyframes neonn {
-    from {
-      text-shadow: 0px 0px 35px rgba(255, 0, 0, 1),
-      0px 0px 45px rgba(255, 60, 60, 1),
-      0px 0px 55px rgba(197, 61, 61, 1);
-    }
-  }
-  
-  a {
-    color:rgba(255, 255, 255, 1);
-    font-family: 'Times New Roman', Times, serif;
-  }
-  a:hover {
-    color:rgba(28, 135, 0, 1);
-  }
-  img {
-    float:right;
-    margin:7px;
-  }
-  .img2 {
-    float:left;
-    margin:7px;
-  }
-  iframe {
-    width:100%;
-    aspect-ratio:16/9;
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 
 <body>
   <span class="head-neon">
     <h1>MILITAR BRASILEIRO</h1>
   </span>
   <p style="margin-top:50px;">Este é apenas mais um blog pouco visualizado dentro deste vasto WWW (<em><strong>World Wide Web</strong></em>) chamado Surface Web. Se você está aqui, então significa que você provavelmente deve ter clicado em algum link que te direcionou para esta página, ora, pois bem, prepare um café ou um chá e seja muito bem recebido.</p>
-
-  <button  onclick="positions()">POSIÇÕES</button>
-  <button onclick="internato()">INTERNATO</button><br><br>
+<div class="the-buttons-div">
+ <hr> <button  onclick="positions()">POSIÇÕES</button><br><hr>
+  <button onclick="internato()">INTERNATO</button><br><hr>
   <button onclick="inscricao()">INSCRIÇÕES</button>
+  <hr>
+  </div>
   <div class="position" id="position">
     <button style="float:right; margin-right:35px;margin-top: 15px;"  onclick="positions()">VOLTAR</button>
     <span class="head-neon"><h1>POSIÇÕES</h1></span>
     
       <li><a href="#sentido">SENTIDO</a></li>
       <li> <a href="#descansar">DESCANSAR</a></li>
-      <li></li>
-      <li></li>
       
     
     <p><strong><span class="gold" id="sentido">SENTIDO</span></strong>:
@@ -152,7 +49,7 @@
       <summary>Vídeo tutorial</summary>
      <iframe src="https://www.youtube.com/embed/onGybrxXSIs" frameborder="0"></iframe>
     </details>
- <br><br>
+ <br><br><br><br><br><br>
  <p></p>
  <br><br>
   </div>
@@ -174,47 +71,47 @@ O capitão do Quartel fez um discurso muito horrível para os novatos. Esse tal 
 <p>Ao décimo dia de internato e somos atualizados de que não serão apenas 4 semanas ou 6 semanas de internato aquartelados e, de fato, para a infelicidade da maioria, serão 8 semanas de internato sem ver a família.</p>
 <p>Estamos no décimo terceiro dia de internato e o meu pé direito está inchado de tanto marchar e ficar em pé. Não consigo mais fazer o movimento de retaguarda pulando. Realmente não sou um soldado de aço, pois sou feito de ossos como qualquer um dos soldados brasileiros. Sinto dor como um ser humano, não como um animal. </p>
 <p>São 41 (quarenta e um) aquartelados na Base Administrativa da Guarnição de Santa Maria. Posso listar os nomes de guerras dos soldados deste ano de 2024: <br><br>
-600 - Cb Lopes <br>
-601 - Tassinari <br>
-602 - Weber <br>
-603 - Maidana<br>
-604 - Richard<br>
-605 - Allan<br>
-606 - Schumacher<br>
-607 - Chimainski<br>
-608 - Drescher<br>
-609 - <strong>Carvalho</strong> (Pampers)<br>
-610 - Da Rosa (Cadeadinho)<br>
-611 - Daniel <br>
-612 - Gonçalves <br>
-613 - Ebling<br>
-614 - Teixeira <br>
-615 - Bernardi<br>
-616 - Gregori <br>
-617 - Silvano<br>
-618 - Roger<br>
-619 - Zancan<br>
-620 - Da Silva <br>
-621 - Kainan (Mexidinha)<br>
-622 - Preuss <br>
-623 - Cardoso (Baixado)<br>
-624 - Nesske <br>
-625 - Hönig<br>
-626 - Xavier<br>
-627 - Lemos <br>
-628 - Anderson (Fala Manso)<br>
-629 - Magalhães <br>
-630 - Machado <br>
-631 - Fagundes<br>
-632 - Alberto<br>
-633 - Coelho<br>
-634 - Gabriel<br>
-635 - Eduardo<br>
-636 - Emanuel (Caveira)<br>
-637 - Silva Santos<br>
-638 - Oliveira (Mate)<br>
-639 - Keller<br>
-640 - Lucas <br>
+600 - Cabo Lopes <br>
+601 - Sd EV Tassinari <br>
+602 - Sd EV Weber <br>
+603 - Sd EV Maidana (o 33)<br>
+604 - Sd EV Richard (Chorão)<br>
+605 - Sd EV Allan<br>
+606 - Sd EV Schumacher<br>
+607 - Sd EV Chimainski<br>
+608 - Sd EV Drescher<br>
+609 - <strong>Sd EV CARVALHO</strong> (SUPERMAN)<br>
+610 - Sd EV Da Rosa (Cadeadinho)<br>
+611 - Sd EV Daniel (Stuart Little)<br>
+612 - Sd EV Gonçalves<br>
+613 - Sd EV Ebling<br>
+614 - Sd EV Teixeira <br>
+615 - Sd EV Bernardi<br>
+616 - Sd EV Gregori <br>
+617 - Sd EV Silvano<br>
+618 - Sd EV Roger<br>
+619 - Sd EV Zancan<br>
+620 - Sd EV Da Silva <br>
+621 - Sd EV Kainan (Mexidinha)<br>
+622 - Sd EV Preuss <br>
+623 - Sd EV Cardoso (Baixado)<br>
+624 - Sd EV Nesske (Mib)<br>
+625 - Sd EV Hönig<br>
+626 - Sd EV Xavier<br>
+627 - Sd EV Lemos <br>
+628 - Sd EV Anderson (Fala Manso)<br>
+629 - Sd EV Magalhães <br>
+630 - Sd EV Machado <br>
+631 - Sd EV Fagundes<br>
+632 - Sd EV Alberto<br>
+633 - Sd EV Coelho (Para-raio)<br>
+634 - Sd EV Gabriel<br>
+635 - Sd EV Eduardo<br>
+636 - Sd EV Emanuel (Caveira)<br>
+637 - Sd EV Silva Santos<br>
+638 - Sd EV Oliveira (Mate)<br>
+639 - Sd EV Keller<br>
+640 - Sd EV Lucas <br>
 </p>
 <p>Sábado, dia 16 de março de 2024. O dia em que tivemos a liberdade de sair para fora do Quartel ou, da Base Administrativa da Guarnição de Santa Maria. Todos estavam muito empolgados e felizes. O internato de um mês fechado terminou quando deram esse dia de <em>folga</em> para aproveitarmos a ficar com a família e comprar o material necessário para quando formos treinar em campo.</p>
 <p>Sexta-feira, 22 de março de 2024. Este foi o dia em que fizemos limpeza no prédio dos coroneis de exército. Apenas sei que o dia de hoje foi melhor do que o de amanhã, pois amanhã será o dia mais chato de toda a minha semana, ora, por eu morar em Santa Maria, a escala escolheu a minha pessoa para ficar de serviço o dia todo, enquanto o restante do pessoal são livres para visitar a família e os amigos pessoalmente.</p>
@@ -222,12 +119,12 @@ O capitão do Quartel fez um discurso muito horrível para os novatos. Esse tal 
     <p>01 de abril de 2024. Hoje recebemos o nosso primeiro salário do Exército. Foi o dinheiro mais bem suado que já recebi em minha vida, recebi um total de R$1.293,00, pouco para o tanto que temos de fazer, nem um salário cheio, porém é o que temos de aceitar.</p>
     <p>A lista de quem eu levaria para a Guerra: <br>
     - 629 Magalhães <br>
-    - 611 Daniel <br>
+    - 602 Weber <br>
     - 610 Da Rosa <br><br>
     A lista de quem eu não levaria para a Guerra: <br>
-    - 621 Kainan<br>
-    - 627 Lemos <br>
-    - 623 Cardoso </p>
+    - 626 Xavier<br>
+    - 612 Gonçalves<br>
+    - 618 Roger  </p>
     
     <p>Um comentário pessoal sobre um homem barbado e mal educado. O próprio 621 fez uma brincadeira de mal gosto, para fazer graçinha perto dos amigos, ele cuspiu na minha cara fingindo estar tossindo, pois ele fielmente acredita que passei algum tipo de doença que lhe deu febre e, ele fez isso umas duas vezes: "fingindo estar tossindo com a língua para fora", bem, agora vocês sabem porque não gostaria de levar ele para a guerra.</p>
     <p> Sexta-feira, 12 de abril de 2024. O <em>último dia do internato</em> e todos estão vibrando, pois este dia vamos poder ir para casa, nem todos, o pessoal que vai ficar de sentinela e o pessoal do plantão não poderão ir para casa. O azar militar é inevitável para todos, mas é de se esperar.</p>
@@ -243,45 +140,25 @@ O capitão do Quartel fez um discurso muito horrível para os novatos. Esse tal 
     <span class="head-neon"><h1>DEPOIS DO CAMPO</h1></span>
     <p>Eles dividiram o batalhão para as seções. A minha seção foi o EB f@cil, era um local onde eu acabei virando um atendente ao público idoso, entregava-os a senha para o atendimento e, frequentemente tirava os contracheques para os clientes. Eu adorava trabalhar naquele lugar, era o que eu gostava de fazer. O soldado Isaias era o professor que estava a ensinar eu e o soldado 633 Coelho ao atendimento ao público. Nós aprendemos a atender os idosos pensionistas etc... O futuro estava reservado, muito bem reservado, foi como um surpresa já esperada que a Base Administrativa da Guarnição de Santa Maria, mais em específico o coronél Soares, mais tarde me abandonaria feito um cachorro de rua ao me conceber em mãos um Licenciamento a Bem da Disciplina. </p>
     
- <br><br><br></div>
+ <br><br><br><br><br><br></div>
  <div class="inscricoes" id="inscricoes">
     <button style="float:right;margin-right:35px;margin-top:15px;" onclick="inscricao()">VOLTAR</button>
      <span class="head-neon">
        <h1>INSCRIÇÕES</h1>
      </span>
-    <p>Todo ano tem inscrições, de jovens, que completam 18 anos de idade, inscrições para ser parte do Exército Militar Brasileiro, Marinha ou Aeronáutica. (<em>Pois bem, me inscrevi neste último, mas não fui designado para uma base aérea, ora, de certa forma, fui designado para uma tal de Base Adminstrativa da Guarnição de Santa Maria, ou seja, um Quartel de Infantaria</em>).</p> 
-    <p>Um alerta para quem está se inscrevendo para o <strong>Exército Militar Brasileiro</strong>... O exército não é uma colônia de férias, pois em menos de uma semana de internato, o exército vai testar sua força e a sua determinação e, o seu limite ao extremo, até você enfraquecer.<br><br> O exército pode entrar com uma facilidade além do normal dentro do psicológico de qualquer um, pois bem, sou testemunha disso. Há vários soldados com um psicológico despreparado e fraco, que qualquer um consegue entrar em sua mente e te dar ordens. Há também os "<em>soldadinhos</em>", aqueles que são os preferidinhos dos sargentos e cabos e, soldados antigos, de modo injusto, por se conhecerem anteriormente ou até mesmo por serem familiares ou conhecidos. O tratamento desses soldados não é nada igual ao tratamento de outros soldados da compania.</p>
-
+    <p>Todo ano tem inscrições de jovens que completam 18 anos de idade, inscrições para ser parte do Exército Militar Brasileiro, Marinha ou Aeronáutica. (<em>Pois bem, me inscrevi neste último, mas não fui designado para uma base aérea, ora, de certa forma, fui designado para uma tal de Base Adminstrativa da Guarnição de Santa Maria, ou seja, um Quartel de Infantaria</em>).</p> 
+    <p>Um alerta para quem está se inscrevendo para o <strong>Exército Militar Brasileiro</strong>: O exército não é o país das maravilhas, pois então, o exército vai testar sua força e a sua determinação e, o seu limite ao extremo, até você enfraquecer.<br><br> Se você acha que o seu psicológico é fraco, um conselho; desista e pegue a sua reservista na primeira inspeção, ou faça o contrário e suicide-se no EB. Há também os "<em>soldadinhos</em>", aqueles que são os preferidos dos sargentos e cabos e de soldados antigos, injustamente por se conhecerem anteriormente ou até mesmo por serem familiares ou conhecidos. O tratamento desses soldados não é nada igual ao tratamento de outros soldados.</p>
+<p>Para se increver, basta entrar no site: <a href="https://alistamento.eb.mil.br/">Alistamento do Exército Brasileiro Militar do Brasil</a></p>
  </div>
   <footer style="margin-top: 50px; bottom:0;position: fixed;
 text-align: center;">
- &copy; 2024 Todos os direitos reservados.
+<p>&copy; 2024 todos os direitos reservados.<br>
+<a href="https://www.big-loser.site">MirrorNEWS</a><br>
+<a href="https://3asyice.github.io/Desenhos-Animados/">Reclamações</a><br>
+<a href="https://www.bandersnatch.club">Bandersnatch</a>
+</p>
   </footer>
-  <script>
-    var posDiv = document.getElementById('position');
-    
-    var displayPos = false;
-    
-    function positions() {
-      displayPos = !displayPos;
-      posDiv.style.display = displayPos ? 'block' : 'none';
-    }
-    var intDiv = document.getElementById('internatoo');
-    
-    var displayInt = false;
-    
-    function internato() {
-      displayInt = !displayInt;
-      intDiv.style.display = displayInt ? 'block' : 'none';
-    }
-    var insDiv = document.getElementById('inscricoes');
-    
-    var displayIns = false;
-    
-    function inscricao() {
-      displayIns = !displayIns;
-      insDiv.style.display = displayIns ? 'block' : 'none';
-    }
+  <script src="script.js">
     
   </script>
 </body>
